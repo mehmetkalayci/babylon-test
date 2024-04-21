@@ -104,6 +104,13 @@ import "@babylonjs/loaders";
       meshes.meshes.forEach((mesh) => {
         mesh.isPickable = true;
         mesh.actionManager = actionManager;
+
+
+        // kutuyu gizle
+        if(mesh.name == 'kutu') {
+          mesh.isVisible = false
+        }
+
       });
     }
   );
